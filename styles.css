@@ -1,0 +1,171 @@
+/* ----------------------------- */
+/* ESTILO GENERAL */
+/* ----------------------------- */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fafafa;
+    color: #333;
+}
+
+/* ----------------------------- */
+/* MENÚ LATERAL */
+/* ----------------------------- */
+
+#menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 260px;
+    height: 100vh;
+    background: #1f1f1f;
+    color: white;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+#menu h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+#menu ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#menu ul li {
+    margin-bottom: 12px;
+}
+
+#menu ul li a {
+    color: #ddd;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+#menu ul li a:hover {
+    color: white;
+    padding-left: 5px;
+}
+
+/* ----------------------------- */
+/* CONTENIDO */
+/* ----------------------------- */
+
+#content {
+    margin-left: 280px;
+    padding: 40px;
+}
+
+section {
+    margin-bottom: 80px;
+}
+
+/* ----------------------------- */
+/* TÍTULOS */
+/* ----------------------------- */
+
+section h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #ddd;
+    padding-bottom: 8px;
+}
+
+/* FRANJAS PASTEL PARA SUBTÍTULOS */
+section h2 {
+    font-size: 24px;
+    padding: 10px 14px;
+    background: #e8f4ff; /* azul pastel suave */
+    border-left: 6px solid #6ab7ff;
+    border-radius: 6px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/* Si querés cambiar colores pastel, acá tenés alternativas: */
+/*
+    #fff4e6 — durazno pastel
+    #f9e8ff — violeta pastel
+    #eaffea — verde pastel
+    #fff7cc — amarillo pastel
+*/
+
+/* ----------------------------- */
+/* IMÁGENES MÁS CHICAS */
+/* ----------------------------- */
+
+section img {
+    max-width: 60%;        /* achica imágenes */
+    display: block;        /* para poder centrar */
+    margin: 25px auto;     /* centra automáticamente */
+    border-radius: 8px;    /* esquinas redondeadas */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15); /* sombra suave */
+}
+
+/* Imágenes dentro de listas (por si aparecen) */
+section ul img {
+    max-width: 50%;
+}
+
+/* ----------------------------- */
+/* LISTAS */
+/* ----------------------------- */
+
+section ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+section ul li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.zoom-img {
+    cursor: zoom-in;
+    transition: 0.2s;
+}
+
+.zoom-img:hover {
+    opacity: 0.8;
+}
+
+
+/* ----------------------------- */
+/* RESPONSIVE */
+/* ----------------------------- */
+
+@media (max-width: 900px) {
+    #menu {
+        width: 200px;
+    }
+
+    #content {
+        margin-left: 220px;
+    }
+
+    section img {
+        max-width: 85%;
+    }
+}
+
+@media (max-width: 600px) {
+    #menu {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    #content {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    section img {
+        max-width: 100%;
+    }
+}
+

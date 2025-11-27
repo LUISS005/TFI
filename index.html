@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TFI - H&M Negocios Inmobiliarios</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- MENÚ LATERAL -->
+    <nav id="menu">
+        <h2>Trabajo Final Integrador</h2>
+        <ul>
+            <li><a href="#portada">Inicio</a></li>
+            <li><a href="#empresa">La Empresa</a></li>
+            <li><a href="#problema">Problema Actual</a></li>
+            <li><a href="#oportunidad">Oportunidad</a></li>
+            <li><a href="#objetivo">Objetivos</a></li>
+            <li><a href="#alcance">Alcance</a></li>
+            <li><a href="#modelo-negocio">Modelado del Negocio</a></li>
+            <li><a href="#relevamiento">Relevamiento</a></li>
+            <li><a href="#vision">Documento Visión</a></li>
+            <li><a href="#casos-uso">Casos de Uso</a></li>
+            <li><a href="#diagramas">Diagramas</a></li>
+            <li><a href="#prototipos">Prototipos</a></li>
+            <li><a href="#viabilidad">Viabilidad</a></li>
+            <li><a href="#conclusion">Conclusión</a></li>
+            <li><a href="#anexos">Anexos</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTENIDO -->
+    <div id="content">
+
+        <!-- PORTADA -->
+        <section id="portada">
+            <h1>TFI – H&M Negocios Inmobiliarios</h1>
+            <h2>Sistema Web para la Gestión de Propiedades y Turnos</h2>
+            <p>Presentado por: <strong>Lautaro Gómez – Gabriel Nieva – Luis Sandoval</strong></p>
+        </section>
+
+        <!-- EMPRESA -->
+        <section id="empresa">
+            <h1>La Empresa</h1>
+            <p><strong>H&M Negocios Inmobiliarios</strong> es una empresa formada por dos agentes con amplia experiencia en el rubro, que actualmente gestionan su catálogo mediante Drive, Excel y redes sociales.</p>
+
+            <h2>Misión</h2>
+            <p>Brindar soluciones inmobiliarias profesionales, confiables y personalizadas, garantizando transparencia y calidad en cada operación.</p>
+
+            <h2>Visión</h2>
+            <p>Convertirse en una inmobiliaria reconocida a nivel nacional por su innovación, organización y excelencia en la atención.</p>
+
+            <h2>Estructura de la empresa</h2>
+            <p>A continuación se muestra el diagrama de roles y el organigrama interno:</p>
+            <img src="/img/diagrama venn.png" alt="Diagrama de Venn" class="zoom-img">
+            <img src="/img/organigrama.png" alt="Organigrama" class="zoom-img">
+        </section>
+
+        <!-- PROBLEMA -->
+        <section id="problema">
+            <h1>Problema Actual</h1>
+            <ul>
+                <li>El catálogo de propiedades está distribuido entre Drive, Excel e Instagram.</li>
+                <li>La gestión de turnos es manual y depende de la disponibilidad del agente.</li>
+                <li>No existe un registro centralizado de clientes interesados.</li>
+                <li>La falta de un sistema unificado provoca desorganización y pérdida de información.</li>
+            </ul>
+            <img src="/img/bpmn actual.png" alt="Modelo actual de la empresa" class="zoom-img">
+        </section>
+
+        <!-- OPORTUNIDAD -->
+        <section id="oportunidad">
+            <h1>Oportunidad</h1>
+            <p>La solución propuesta consiste en implementar una plataforma web que permita:</p>
+            <ul>
+                <li>Centralizar propiedades, clientes y turnos.</li>
+                <li>Automatizar la solicitud y confirmación de visitas.</li>
+                <li>Publicar un catálogo web organizado y accesible.</li>
+                <li>Mejorar la comunicación interna y la presencia online.</li>
+            </ul>
+        </section>
+
+        <!-- OBJETIVOS -->
+        <section id="objetivo">
+            <h1>Objetivos del Proyecto</h1>
+            <p><strong>Objetivo general:</strong> Diseñar un sistema que optimice la gestión de propiedades y turnos mediante una plataforma web moderna y eficiente.</p>
+
+            <h2>Objetivos específicos:</h2>
+            <ul>
+                <li>Implementar un catálogo web con filtros avanzados.</li>
+                <li>Crear un sistema de turnos con validación de disponibilidad.</li>
+                <li>Automatizar notificaciones a clientes y agentes.</li>
+                <li>Centralizar la información clave del negocio.</li>
+                <li>Mejorar la eficiencia operativa de los agentes.</li>
+            </ul>
+        </section>
+
+        <!-- ALCANCE -->
+        <section id="alcance">
+            <h1>Alcance del Sistema</h1>
+
+            <h2>Incluye:</h2>
+            <ul>
+                <li>Carga, edición y gestión de propiedades.</li>
+                <li>Panel de administración.</li>
+                <li>Búsqueda y filtrado avanzado.</li>
+                <li>Sistema de turnos integrado.</li>
+                <li>Notificaciones automáticas.</li>
+                <li>Registro básico de clientes.</li>
+            </ul>
+
+            <h2>No incluye:</h2>
+            <ul>
+                <li>Pagos online.</li>
+                <li>Gestión legal o contable.</li>
+                <li>Administración de contratos.</li>
+            </ul>
+        </section>
+
+        <!-- MODELO DE NEGOCIO -->
+        <section id="modelo-negocio">
+            <h1>Modelado del Negocio Propuesto</h1>
+            <p>El nuevo modelo organiza todas las propiedades en un sistema centralizado y permite gestionar turnos desde la ficha de cada inmueble.</p>
+            <img src="/img/bpmn negocio actualizado.png" alt="BPMN actualizado" class="zoom-img">
+            <img src="/img/diagrama bloque produvto final.png" alt="Diagrama del producto final" class="zoom-img">
+        </section>
+
+        <!-- RELEVAMIENTO -->
+        <section id="relevamiento">
+            <h1>Relevamiento</h1>
+            <p>Se realizó una entrevista con uno de los agentes para comprender el funcionamiento actual y las necesidades del negocio. Se identificaron:</p>
+            <ul>
+                <li>Procesos actuales de publicación y atención.</li>
+                <li>Limitaciones del modelo basado en Drive y Excel.</li>
+                <li>Problemas de organización y comunicación.</li>
+                <li>Requerimientos explícitos e implícitos.</li>
+            </ul>
+        </section>
+
+        <!-- DOCUMENTO VISIÓN -->
+        <section id="vision">
+            <h1>Documento Visión</h1>
+
+            <h2>Stakeholders</h2>
+            <ul>
+                <li>Líder del proyecto</li>
+                <li>Analistas</li>
+                <li>Programadores</li>
+                <li>Administradores del sistema</li>
+                <li>Agentes comerciales</li>
+                <li>Clientes</li>
+            </ul>
+        </section>
+
+        <!-- CASOS DE USO -->
+        <section id="casos-uso">
+            <h1>Casos de Uso Principales</h1>
+
+            <h2>CU01 – Solicitar Turno</h2>
+            <p>El cliente selecciona fecha y horario disponible, y el sistema registra la visita y notifica al agente correspondiente.</p>
+
+            <h2>CU02 – Publicar Propiedad</h2>
+            <p>El agente carga fotos, características y detalles del inmueble, publicándolo automáticamente en el catálogo.</p>
+        </section>
+
+        <!-- DIAGRAMAS -->
+        <section id="diagramas">
+            <h1>Diagramas del Sistema</h1>
+            <ul>
+                <li>Casos de uso</li>
+                <li>Diagramas de secuencia</li>
+                <li>Diagrama de estados</li>
+                <li>Modelo de dominio</li>
+                <li>Diagrama de bloques</li>
+            </ul>
+            <img src="/img/digrama caso de uso.png" class="zoom-img">
+            <img src="/img/digrama secuencia publicar propiedad.png" class="zoom-img">
+            <img src="/img/dirgama secuencia.png" class="zoom-img">
+            <img src="/img/gestion de turnos diagrama bloques.png" class="zoom-img">
+            <img src="/img/modelo dominio.png" class="zoom-img">
+        </section>
+
+        <!-- PROTOTIPOS -->
+        <section id="prototipos">
+            <h1>Prototipos</h1>
+            <p>Se diseñaron las interfaces principales del sistema:</p>
+            <ul>
+                <li>Página de inicio</li>
+                <li>Ficha de propiedad</li>
+                <li>Formulario de solicitud de turno</li>
+            </ul>
+            <img src="/img/prototipo1.jpg" class="zoom-img">
+            <img src="/img/prototipo2.jpg.png" class="zoom-img">
+            <img src="/img/prototipo3.png" class="zoom-img">
+        </section>
+
+        <!-- VIABILIDAD -->
+        <section id="viabilidad">
+            <h1>Estudio de Viabilidad</h1>
+            <ul>
+                <li><strong>Viabilidad técnica:</strong> Alta, utilizando tecnologías web comunes.</li>
+                <li><strong>Viabilidad económica:</strong> Bajo costo de desarrollo y mantenimiento.</li>
+                <li><strong>Viabilidad operativa:</strong> Optimiza tiempo y reduce errores.</li>
+                <li><strong>Viabilidad legal:</strong> Compatible con manejo básico de datos.</li>
+            </ul>
+        </section>
+
+        <!-- CONCLUSIÓN -->
+        <section id="conclusion">
+            <h1>Conclusión</h1>
+            <p>La implementación del sistema permitirá mejorar la organización interna, reducir la descoordinación entre agentes y aumentar la eficiencia en la gestión de turnos. Además, profesionaliza la presencia online de la empresa.</p>
+            <p>El proyecto demuestra ser altamente viable y recomendable para su desarrollo.</p>
+        </section>
+
+        <!-- ANEXOS -->
+        <section id="anexos">
+            <h1>Anexos</h1>
+            <p>Se incluyen:</p>
+            <ul>
+                <li>Entrevista completa</li>
+                <li>Requerimientos asumidos</li>
+                <li>Planillas de relevamiento</li>
+                <li>Fotos del proceso actual</li>
+                <li>Pizarra / calendario de citas</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <!-- MODAL PARA VER IMÁGENES AMPLIADAS -->
+<div class="modal fade" id="imgModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark">
+      <div class="modal-body p-0">
+        <img id="modalImage" src="" class="w-100" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  document.querySelectorAll(".zoom-img").forEach(img => {
+    img.addEventListener("click", function () {
+      document.getElementById("modalImage").src = this.src;
+      const modal = new bootstrap.Modal(document.getElementById("imgModal"));
+      modal.show();
+    });
+  });
+</script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+

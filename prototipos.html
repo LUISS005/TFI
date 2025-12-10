@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototipos y Conclusiones - H&M</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: #303030;
+            min-height: 100vh;
+        }
+        .content-wrapper {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            margin: 30px 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        .navbar {
+            background: rgba(255, 255, 255, 0.95) !important;
+        }
+        h1, h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+        .prototype-section {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        .prototype-mockup {
+            background: white;
+            border: 3px solid #667eea;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .benefit-card {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 15px 0;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .benefit-card:hover {
+            transform: translateY(-5px);
+        }
+        .conclusion-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+        .glossary-term {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        .home-button {
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .home-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+        .diagram-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            margin: 20px 0;
+        }
+        .prototype-image-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">🏢 H&M Inmobiliaria</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="empresa.html">Empresa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="vision.html">Visión</a></li>
+                    <li class="nav-item"><a class="nav-link" href="casos-uso.html">Casos de Uso</a></li>
+                    <li class="nav-item"><a class="nav-link" href="viabilidad.html">Viabilidad</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="prototipos.html">Prototipos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="content-wrapper">
+            <h1 class="text-center mb-4">🎨 Prototipos y Conclusiones</h1>
+
+            <!-- Prototipos -->
+            <div class="prototype-section">
+                <h2>🖥️ Prototipos de Interfaz</h2>
+                <p class="text-muted">Vista preliminar del diseño del sistema</p>
+
+                <!-- Prototipo 1: Página de Inicio -->
+                <div class="prototype-image-container">
+                    <h4>Prototipo 1 - Página de Inicio</h4>
+                    <img src="img/prototipo1.jpg" alt="Prototipo Página de Inicio" class="img-fluid diagram-img">
+                    <p class="text-muted mt-3">Pantalla principal con navegación y propiedades destacadas</p>
+                </div>
+
+                <!-- Prototipo 2: Sección de Propiedad -->
+                <div class="prototype-image-container">
+                    <h4>Prototipo 2 - Vista Detalle de Propiedad</h4>
+                    <img src="img/prototipo2.jpg" alt="Prototipo Detalle Propiedad" class="img-fluid diagram-img">
+                    <p class="text-muted mt-3">Información completa de la propiedad con opción de agendar visita</p>
+                </div>
+
+                <!-- Prototipo 3: Formulario de Solicitud -->
+                <div class="prototype-image-container">
+                    <h4>Prototipo 3 - Formulario de Solicitud de Visita</h4>
+                    <img src="img/prototipo3.jpg" alt="Prototipo Formulario" class="img-fluid diagram-img">
+                    <p class="text-muted mt-3">Formulario para agendar citas con validación de datos</p>
+                </div>
+            </div>
+
+            <!-- Beneficios -->
+            <h2 class="mt-5 text-center">🎯 Beneficios Principales del Sistema</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="benefit-card">
+                        <div class="fs-1">🌐</div>
+                        <h5 class="mt-3">Mayor Presencia Online</h5>
+                        <p>Página web con catálogo actualizado de propiedades</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefit-card">
+                        <div class="fs-1">⏱️</div>
+                        <h5 class="mt-3">Optimización del Tiempo</h5>
+                        <p>Gestión de turnos automatizada mejora comunicación</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefit-card">
+                        <div class="fs-1">📊</div>
+                        <h5 class="mt-3">Reducción de Errores</h5>
+                        <p>Información centralizada y organizada</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefit-card">
+                        <div class="fs-1">📈</div>
+                        <h5 class="mt-3">Mayor Productividad</h5>
+                        <p>Incremento en eficiencia de agentes</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefit-card">
+                        <div class="fs-1">🎯</div>
+                        <h5 class="mt-3">Mayor Alcance</h5>
+                        <p>Expansión de oportunidades de negocio</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefit-card">
+                        <div class="fs-1">🚀</div>
+                        <h5 class="mt-3">Escalabilidad</h5>
+                        <p>Posibilidad de expandir funcionalidades</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Glosario Resumido -->
+            <h2 class="mt-5">📚 Glosario de Términos Clave</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="glossary-term">
+                        <h6>🏢 Agente Inmobiliario</h6>
+                        <p class="small mb-0">Persona encargada de mediar en operaciones inmobiliarias, utiliza el sistema de turnos.</p>
+                    </div>
+                    <div class="glossary-term">
+                        <h6>👤 Cliente</h6>
+                        <p class="small mb-0">Individuo interesado en propiedades, interactúa con la web y sistema de turnos.</p>
+                    </div>
+                    <div class="glossary-term">
+                        <h6>🏠 Propiedad</h6>
+                        <p class="small mb-0">Bien inmueble listado en la web con atributos como dirección, precio y descripción.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="glossary-term">
+                        <h6>📅 Sistema de Turnos</h6>
+                        <p class="small mb-0">Aplicación para asignar y gestionar horarios de visitas, evitando conflictos.</p>
+                    </div>
+                    <div class="glossary-term">
+                        <h6>🌐 Página Web</h6>
+                        <p class="small mb-0">Sitio online para mostrar propiedades, contactar clientes y generar leads.</p>
+                    </div>
+                    <div class="glossary-term">
+                        <h6>💾 Base de Datos</h6>
+                        <p class="small mb-0">Repositorio digital donde se almacenan datos de propiedades, clientes y turnos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Conclusión -->
+            <div class="conclusion-box">
+                <h2 class="text-center mb-4">🎓 Conclusión del Proyecto</h2>
+                <p class="lead">Tras analizar detalladamente el funcionamiento actual de H&M Negocios Inmobiliarios y documentar todos los procesos relacionados a la gestión de propiedades y turnos, se determina que la implementación de un sistema web es una <strong>solución viable y beneficiosa</strong> para la organización.</p>
+                
+                <div class="mt-4">
+                    <h5>✅ Resultados de la Evaluación:</h5>
+                    <ul>
+                        <li><strong>Viabilidad Técnica:</strong> Alta - Tecnología disponible y accesible</li>
+                        <li><strong>Viabilidad Económica:</strong> Positiva - ROI esperado favorable</li>
+                        <li><strong>Viabilidad Operacional:</strong> Excelente - Personal predispuesto al cambio</li>
+                    </ul>
+                </div>
+
+                <div class="mt-4">
+                    <h5>🎯 Recomendación Final:</h5>
+                    <p>Se recomienda <strong>avanzar con la etapa de diseño detallado e implementación</strong> del sistema web y de gestión de turnos, con el fin de potenciar el crecimiento de la empresa y garantizar una atención moderna, eficiente y alineada a las expectativas del cliente actual.</p>
+                </div>
+
+                <div class="alert alert-light mt-4">
+                    <strong>📅 Fecha de Aprobación:</strong> 23 de noviembre de 2025<br>
+                    <strong>⏱️ Tiempo Estimado de Implementación:</strong> 2 meses<br>
+                    <strong>💰 Inversión Total:</strong> $5.625.000
+                </div>
+            </div>
+
+            <!-- Botón Volver al Inicio -->
+            <div class="text-center mt-5 mb-4">
+                <a href="index.html" class="btn home-button">
+                    🏠 Volver al Inicio de la Presentación
+                </a>
+            </div>
+
+            <div class="text-center mt-4">
+                <p class="text-muted">¡Gracias por revisar nuestra presentación!</p>
+                <p class="text-muted">H&M Negocios Inmobiliarios - Sistema de Gestión Inmobiliaria</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
